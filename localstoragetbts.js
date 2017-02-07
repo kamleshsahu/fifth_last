@@ -52,7 +52,7 @@ console.log("else part of loadhsitory is running");
                     count++;
                     try {
 
-                       itemdisplay += "<tr id='table_row' ><td style='background-color:rgb(244,244,244)' id='table_data' ><a href='#' id='data_hist' onclick='historyonclick(" + JSON.stringify(fetchdata[k].sourcedetails)+ "," + JSON.stringify(fetchdata[k].destinationdatails) +")' >" + fetchdata[k].sourcedetails.name + "<section align='center' style='position:absolute;margin:-25px 0% 0% 31%'><img src='img/arrow.png'  height='30px' width='90px'></section>"+"<spam style='float:right;margin:0px 15px 0px 0px;'>"+ fetchdata[k].destinationdatails.name +"</spam>"+ "</a></td></tr>";
+                       itemdisplay += "<tr id='table_row' ><td style='background-color:rgb(244,244,244)' id='table_data' ><a href='#' id='data_hist' onclick='historyonclick(" + JSON.stringify(fetchdata[k].sourcedetails)+ "," + JSON.stringify(fetchdata[k].destinationdatails) +")' >" + fetchdata[k].sourcedetails.name + "<section align='center' style='position:absolute;margin:-25px 0% 0% 31%'><img src='arrow.png'  height='30px' width='90px'></section>"+"<spam style='float:right;margin:0px 15px 0px 0px;'>"+ fetchdata[k].destinationdatails.name +"</spam>"+ "</a></td></tr>";
                     }catch(error){
                         console.log("here is the bug inside itemdisplay means:"+error);
                     }

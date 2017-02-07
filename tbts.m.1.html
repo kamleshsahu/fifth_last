@@ -4,38 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Train bw 2 Stations</title>
-    <link rel="stylesheet" type="text/css" href="css/loading_spinner.css">
+    <link rel="stylesheet" type="text/css" href="loading_spinner.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/apikey.js"></script>
-    <script src="js/tbts.js"></script>
-    <script src="js/trainroute.js"></script>
-    <script src="js/livetrainstatus.js"></script>
-    <script src="js/livestationstatus.js"></script>
-    <link rel="stylesheet" href="typeahead/jquery.typeahead.min.css">
+    <script src="jquery-3.1.1.min.js"></script>
+    <script src="apikey.js"></script>
+    <script src="tbts.js"></script>
+    <script src="trainroute.js"></script>
+    <script src="livetrainstatus.js"></script>
+    <script src="livestationstatus.js"></script>
+    <link rel="stylesheet" href="jquery.typeahead.min.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="animate.css">
       <link rel="stylesheet" href="font.css">
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="typeahead/jquery.typeahead.min.js"></script>
-    <script src="js/stationdata.js"></script>
-    <script src="js/tablemakerfortbts.js"></script>
-    <script src="js/typeaheadtbts.js"></script>
-    <script src="js/ajax_success_error.js"></script>
+    <script src="jquery.typeahead.min.js"></script>
+    <script src="stationdata.js"></script>
+    <script src="tablemakerfortbts.js"></script>
+    <script src="typeaheadtbts.js"></script>
+    <script src="ajax_success_error.js"></script>
     <link rel="stylesheet" type="text/css" href="codebase/fonts/font_roboto/roboto.css" />
     <link rel="stylesheet" type="text/css" href="codebase/dhtmlxcalendar.css" />
     <script src="codebase/dhtmlxcalendar.js"></script>
-    <script src="js/today.tomorrow.calender.buttons.js"></script>
-    <script src="js/localstoragetbts.js"></script>
-    <script src="js/inputswap.js"></script>
-    <script src="js/lodash.min.js"></script>
-    <script src="js/trainstartday.js"></script>
-    <script src="js/tablemakerfor_livetrainstatus.js"></script>
-    <script src="js/TrainDelaytimeDisplay.js"></script>
-    <script src="js/favoritestorage.js"></script>
-    <script src="js/GetLiveStatusOnClick.js"></script>
-    <script src="js/upcoming_trains_functions.js"></script>
-    <script src="js/save_favorite_train.js"></script>
+    <script src="today.tomorrow.calender.buttons.js"></script>
+    <script src="localstoragetbts.js"></script>
+    <script src="inputswap.js"></script>
+    <script src="lodash.min.js"></script>
+    <script src="trainstartday.js"></script>
+    <script src="tablemakerfor_livetrainstatus.js"></script>
+    <script src="TrainDelaytimeDisplay.js"></script>
+    <script src="favoritestorage.js"></script>
+    <script src="GetLiveStatusOnClick.js"></script>
+    <script src="upcoming_trains_functions.js"></script>
+    <script src="save_favorite_train.js"></script>
 
     <style>
         *{
@@ -557,7 +557,7 @@ var notgetting_data=false;
     function gettraindelaytime(train_no) {
         var id = "." + train_no;
 
-        $(".table").find(id).find("#delaytime").html("<span><img src=\"img/hourglass.svg\" style=\"height: 35px\"></span>");
+        $(".table").find(id).find("#delaytime").html("<span><img src=\"hourglass.svg\" style=\"height: 35px\"></span>");
         trainroute(train_no).then(function(body) {
             console.log(body);
             return trainstartday(body, sourcedetails, for_today_or_tommorow);

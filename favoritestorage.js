@@ -131,7 +131,7 @@ var train_no=traindetails.number;
 var sourcedetails=traindetails.sourcedetails;
 var id="."+traindetails.number;
     $(".table").find(id).find('#statusbutton').css("backgroundColor","white");
-$(".table").find(id).find('#statusbutton').html("<span><img src=\"img/loading.svg\" style=\"height: 30px\"></span>");
+$(".table").find(id).find('#statusbutton').html("<span><img src=\"loading.svg\" style=\"height: 30px\"></span>");
 console.log(id);
     trainroute(train_no).then(function (body) {
         console.log(body);
